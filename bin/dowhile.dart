@@ -1,6 +1,7 @@
 void main(){
-int i = 1;
-while(i)
-
-  
+int j = 10;
+do{
+  print(j);
+  j--;
+}while(j>=1); //while(j==1)do while executes even if the condition is wrong
 }
