@@ -8,8 +8,8 @@ class Student{
   static String institute = "Luminar";
   }
   void main() {
-  Student sanjana = Student();
-  print("Student name      : ${sanjana.name = 'Sanjana'}");
+  Student sanjana = Student();                                  //Student student1 = Student();
+  print("Student name      : ${sanjana.name = 'Sanjana'}");     //${student1.name = 'Sanjana'}
   print("Student phn       : ${sanjana.phn = 9593680363}");
   print("Student age       : ${sanjana.age = 21}");
   print("Student course    : ${Student.course}");
