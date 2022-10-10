@@ -1,8 +1,9 @@
 void main() {
   //1. list with direct values - growable list
-  List mylist = [1,2,3,4,5,6,7];  //dynamic list as type is not mentioned
-  mylist.add('hello');
-  print(mylist);
+  //List mylist = [1,2,3,4,5,6,7];  //dynamic list as type is not mentioned
+  List<String> names = ["Anu","Binu","Cinu","Dinu","Jinu"];
+  names.add('hello');
+  print(names);
 
 ///list with direct values - growable list
  // List<int> mylist = [1,2,3,4,5,6,7];  //dynamic list as type is not mentioned
@@ -25,4 +26,8 @@ list2[4] = 6;
 list2.add(7);          //for adding new values
 print(list2);
 
+
+///4. List.from()
+List list3 = List.from(list2);
+print('list3 = $list3');
 }
