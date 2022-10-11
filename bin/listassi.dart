@@ -7,10 +7,12 @@ void main() {
 
  for(int index = 0; index < 11 ; index++){  //for(int index = 0; index < list.length ; index++)
  //print(list[index]);
- sum = sum + list[index];
- if(list[index]%2 == 0)
- print(list[index]);
- //print('sum = $sum');
+ //sum = sum + list[index];
+ // print('sum = $sum');
+ if(list[index]%2 == 0){
+ esum = esum + list[index];
+ print('esum = $esum');
+ }
  }
 }
 
