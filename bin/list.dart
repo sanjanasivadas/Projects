@@ -49,7 +49,6 @@ void main() {
   print('list5 = $list5');
   
 
-
   //7. List.of()      of and from are similar
   List list6 = List.of(names);   //by default growable true
   print(list6.contains("Anu"));
