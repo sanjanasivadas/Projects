@@ -64,7 +64,7 @@ class Myself implements Degree,Plustwo,Tenth{
 void main() {
   Myself obj = Myself();
   obj.degdetails('GOVT COLLEGE THALASSERY','CHOKLI','BCA','3yrs');
-  obj.plusdetails('ST JOSEPHS HSS','THALASSERY','COMPUTER SCIENCE','2 yrs',85);
+  obj.plusdetails('ST JOSEPHS HSS','THALASSERY','COMPUTER SCIENCE','2yrs',85);
   obj.tenthdetails('AMRITA VIDYALAYAM','THALASSERY',90,6);
   obj.mydetails('SANJANA V',21,'SIVADASAN V','K V NISHA','STUDENT');
 }
