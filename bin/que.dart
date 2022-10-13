@@ -3,7 +3,7 @@ import 'dart:collection';
 void main() {
   //1.
   Queue<String> obj = Queue();  //Queue<int> obj = Queue(); or var obj = Queue();
-  obj.add('hello');
+  obj.add('hello');      //we cannot create que by giving direct values so we use constructors.
   obj.add('welcome');
   obj.add('hi');
   obj.add('good');
