@@ -10,7 +10,7 @@ void main() {
   }on IOException{
 
   }catch(e){
-    print('exception occured');
+    print('exception occured $e');
   }
   print('thank you');
 }
