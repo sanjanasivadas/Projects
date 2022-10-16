@@ -1,4 +1,6 @@
-void fun1(String name, int age,String email, int ph, String hname,{int? dob,int? pin}){
+import 'even.dart';
+
+void details(String name, int age, String email, int ph, String hname,{int? dob,int? pin}){
   print('name = $name');
   print('age = $age');
   print('email = $email');
@@ -8,5 +10,5 @@ void fun1(String name, int age,String email, int ph, String hname,{int? dob,int?
   print('pin = $pin');
 }
 void main() {
- fun1('Sanjana', 21, 'sanjana@gmail.com', 9593680363, 'SANJANA');
+ details('Sanjana', 21, 'sanjana@gmail.com', 9593680363, 'SANJANA');
 }
