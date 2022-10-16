@@ -8,7 +8,8 @@ int age = 21;
 //string interpolation
 print("My name is ${name}"); //curly bracket to print more than one value
 print("I am ${age}yrs old");
-//print("My name is ${name},I am ${age}yrs old");
+
+//print => My name is Sanjana I am 21yrs old. In single line
 stdout.write("My name is ${name} ");
 stdout.write("I am ${age}yrs old ");
 
