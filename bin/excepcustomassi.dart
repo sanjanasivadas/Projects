@@ -9,7 +9,7 @@ class MyException implements Exception{
   }
 }
   void num(int num){
-    if(num < 10 && num > 50){
+    if(num < 10 || num > 50){
       throw Exception("Entered number is not between the given limit");
     }else{
       print("Entered number is in the limit");
@@ -17,10 +17,8 @@ class MyException implements Exception{
   }
     void main() {
     try{
-      num(1);
+      num(9);
     }catch(e){
       print("exception occured $e");
     }
-
-    
- }
+}

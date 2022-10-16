@@ -1,6 +1,6 @@
 void checkphone(String no){
   if (no.length < 10){
-    throw Exception("phone number length < 10");
+    throw Exception("phone number length is less than 10 digits");
   }else{
     print("Call Me");
   }
