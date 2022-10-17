@@ -13,7 +13,7 @@ class B extends Task{
     print(sum);
     super.numbers(1, 2);
     return sum;        //return statement should be placed at last
-  }
+  }                    //if super is not called parent fuction will not be executed (stack overflow)
 }
 void main() {
   B obj = B();
