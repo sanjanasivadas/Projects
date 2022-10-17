@@ -12,7 +12,7 @@ class B extends Task{
     int sum = c+d;
     print(sum);
     super.numbers(1, 2);
-    return sum;
+    return sum;        //return statement should be placed at last
   }
 }
 void main() {
