@@ -5,7 +5,7 @@ void main() {
   int num = int.parse(stdin.readLineSync()!);
   for(int i = 2; i <= num~/i ; i++){
     if(num%i == 0){
-      temp=1;
+      temp = 1;
       break;
     }
   }
