@@ -1,5 +1,5 @@
-class Pet{
-  String type = 'Dog';
+class Pet{                           //in multilevel all classes have connection to each other.
+  String type = 'Dog';               //we acess all the class from the last class
 }
 class Dog extends Pet{
   String breed = 'Pug';
