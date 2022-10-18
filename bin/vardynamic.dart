@@ -23,6 +23,8 @@ void main() {
   var password = 1234;
   bool result = (username == 'Admin'); //var result = (username == 'Admin');  same meaning as we are using == operator
   print(result);  //bool returns boolean => true or false
+  bool result1 = (password == 1234);
+  print(result1);
 } 
   //int age = 10; 
   //OR var age = 10;  => It is inferred as integer automatically
