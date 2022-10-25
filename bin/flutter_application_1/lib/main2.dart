@@ -10,11 +10,16 @@ void main() {
 class Splash extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Center(
-        child: Icon(Icons.account_tree_rounded,color: Colors.red,size: 95,),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+           children: const [
+            Icon(Icons.account_tree_rounded,color: Colors.red,size: 95,),
+           Text("MYTREE",style: TextStyle(fontSize: 40,color: Colors.green)),
+          ],
       ),
+    )
     );
-    
   }
 }
