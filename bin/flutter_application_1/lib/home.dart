@@ -19,6 +19,7 @@ class HomePage extends StatelessWidget{
               padding: EdgeInsets.all(15.0),
               child: TextField(
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.account_circle),
                   label: Text("Username"),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -32,6 +33,8 @@ class HomePage extends StatelessWidget{
                 obscuringCharacter: "*",
                 obscureText: true,
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.password),
+                  //suffixIcon: Icon(Icons.password),
                   label: Text("Password"),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
