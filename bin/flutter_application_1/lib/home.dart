@@ -6,10 +6,10 @@ class HomePage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title:  const Text("LoginPage"),
-        centerTitle: true,
+        //centerTitle: true,
         ),
       body: SingleChildScrollView(
-        child: Column(
+        child: Column(  //view of the page is in column arrangement
           children: [
             const Padding(
               padding: EdgeInsets.only(top: 20),
@@ -21,6 +21,8 @@ class HomePage extends StatelessWidget{
                 decoration: InputDecoration(
                   prefixIcon: Icon(Icons.account_circle),
                   label: Text("Username"),
+                  //hintText: "Username",
+                  hintText: "username must be your email",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   )

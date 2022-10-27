@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/home.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(MaterialApp(     //root element
     theme: ThemeData(primarySwatch: Colors.pink),    //full theme will be pink
     debugShowCheckedModeBanner: false,
-    home: Splash(),
+    home: Splash(),      //when we create constructor automatically class will be created using create class
   ));
 }
 
-class Splash extends StatefulWidget{
+class Splash extends StatefulWidget{   //a splash screen disappears after a period of time to new page
   @override
   State<Splash> createState() => _SplashState();
 }
