@@ -1,26 +1,22 @@
 import 'package:flutter/material.dart';
-void main() {}
-  
-class LoginPage extends StatelessWidget{
+
+class SignupPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appBar: AppBar(
-       // title:  const Text("LoginPage"),
-        //centerTitle: true,
-       // ),
       body: SingleChildScrollView(
         child: Column(  //view of the page is in column arrangement
           children: [
             const Padding(
-              padding: EdgeInsets.only(top: 100),
-              child: Text("Login",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+              padding: EdgeInsets.all(10),
+              child: Text("Signup",style: TextStyle(fontSize: 30),),
             ),
+            const Text("Create an account its free"),
             const Padding(
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(10),
               child: TextField(
                 decoration: InputDecoration(
-                  label: Text("Email"),
+                  label: Text("Username"),
                   border: OutlineInputBorder(
                     //borderRadius: BorderRadius.all(Radius.circular(20)),
                   )
@@ -28,10 +24,8 @@ class LoginPage extends StatelessWidget{
               ),
             ),
             const Padding(
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(10),
               child: TextField(
-                obscuringCharacter: "*",
-                obscureText: true,
                 decoration: InputDecoration(
                   label: Text("Password"),
                   border: OutlineInputBorder(
@@ -39,11 +33,21 @@ class LoginPage extends StatelessWidget{
                   )
                 ),),
             ),
+            const Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                decoration: InputDecoration(
+                  label: Text("Confirm Password"),
+                  border: OutlineInputBorder(
+                   // borderRadius: BorderRadius.all(Radius.circular(20)),
+                  )
+                ),),
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 20,bottom: 20),
-              child: ElevatedButton(onPressed: (){}, child:  const Text("LOGIN")),
+              child: ElevatedButton(onPressed: (){}, child:  const Text("Sign Up")),
             ),
-            TextButton(onPressed: (){}, child: const Text("Don't have an account? Signup"))
+            TextButton(onPressed: (){}, child: const Text("Already have an account?Login"))
 
           ],))
         );

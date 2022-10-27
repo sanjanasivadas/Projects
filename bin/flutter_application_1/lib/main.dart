@@ -1,11 +1,12 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/loginassi.dart';
+
 
 void main() {
   runApp(MaterialApp(     //root element
-    theme: ThemeData(primarySwatch: Colors.pink),    //full theme will be pink
+    theme: ThemeData(primarySwatch: Colors.blue),    //full theme will be pink
     debugShowCheckedModeBanner: false,
     home: Splash(),      //when we create constructor automatically class will be created using create class
   ));
