@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/login.dart';
-import 'package:flutter_application_1/loginassi.dart';
+import 'package:flutter_application_1/loginvalid.dart';
+
 
 
 void main() {
@@ -26,7 +27,7 @@ class _SplashState extends State<Splash> {
 
     Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => HomePage() ));
+        context, MaterialPageRoute(builder: (context) => LoginValidation() ));
     });
   }
   @override
