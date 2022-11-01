@@ -137,6 +137,6 @@ class Movies extends StatelessWidget {
           ),         
       ],
     )
-    );
+   );
   }
 }
