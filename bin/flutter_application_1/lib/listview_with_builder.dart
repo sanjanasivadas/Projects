@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: List_with_Builder(),));
+  runApp(MaterialApp(
+  home: List_with_Builder(),));
 }
 
 class List_with_Builder extends StatelessWidget{
