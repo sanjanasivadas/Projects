@@ -15,9 +15,9 @@ class _MyBottomnavbarState extends State<MyBottomnavbar> {
  var bodies = <Widget> [
   LoginPage(),
   //Card(color: Colors.teal,child: Padding(padding:EdgeInsets.all(50.0),child: Text("HomePage"),),),
-  Card(color: Colors.red,child: Padding(padding:EdgeInsets.all(50.0),child: Text("Search Page"),),),
-  Card(color: Colors.blueAccent,child: Padding(padding:EdgeInsets.all(50.0),child: Text("Favourites Page"),),),
-  Card(color: Colors.purpleAccent,child: Padding(padding:EdgeInsets.all(50.0),child: Text("Account Page"),),)
+  const Card(color: Colors.red,child: Padding(padding:EdgeInsets.all(50.0),child: Text("Search Page"),),),
+  const Card(color: Colors.blueAccent,child: Padding(padding:EdgeInsets.all(50.0),child: Text("Favourites Page"),),),
+  const Card(color: Colors.purpleAccent,child: Padding(padding:EdgeInsets.all(50.0),child: Text("Account Page"),),)
  ];
  int selectedindex = 0;
  void onitemtap(int index){
@@ -30,7 +30,7 @@ class _MyBottomnavbarState extends State<MyBottomnavbar> {
   Widget build(BuildContext context) {
    return Scaffold(
     appBar: AppBar(
-      title: Text("Bottombar"),),
+      title: const Text("Bottombar"),),
     body:  Center(
       child: bodies.elementAt(selectedindex),
       ),
