@@ -15,8 +15,9 @@ class GridCustom extends StatelessWidget{
         crossAxisCount: 2),
       childrenDelegate: SliverChildBuilderDelegate(
         (context, index) {
+        var images;
         return Image.asset(
-          images[index],
+         // images[index],
           width: 50,
           height: 50,
         );
