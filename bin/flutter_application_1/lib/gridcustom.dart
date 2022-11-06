@@ -16,11 +16,8 @@ class GridCustom extends StatelessWidget{
       childrenDelegate: SliverChildBuilderDelegate(
         (context, index) {
         var images;
-        return Image.asset(
-         // images[index],
-          width: 50,
-          height: 50,
-        );
+        return Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"
+         );
       },
       childCount: 8,
       ),
