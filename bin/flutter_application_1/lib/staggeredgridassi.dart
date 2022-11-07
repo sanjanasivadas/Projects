@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/staggeredgrid.dart';
@@ -24,6 +26,7 @@ class Staggeredgridda extends StatelessWidget{
 
     final List<Widget> _listTile = <Widget> [
       Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png",),
+      Text("Hello"),
       Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
       Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
       Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
@@ -46,18 +49,25 @@ class Staggeredgridda extends StatelessWidget{
 }
 
 class BackGroundTile extends StatelessWidget{
-  String? Image;
-  late String Text;
+  
+  final Image;
+  String Text;
 
-
-
+  BackGroundTile({ required this.Text,this.Image});
+  
   @override
   Widget build(BuildContext context) {
-   return Card(
-    //color: backgroundColor,
-      //child: Icon(icondata, color: Colors.white,)
+    return Container(
+      decoration: Image,
+      
     );
+  }
+
+  
+    
+   
+    
+    
    
   }
 
-}
