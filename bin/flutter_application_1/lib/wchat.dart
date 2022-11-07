@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 void main(){
   runApp(MaterialApp(
@@ -21,11 +20,10 @@ class Chats extends StatelessWidget {
                 ],
               ),
               leading: const CircleAvatar(
-                radius:50,
+                radius:30,
                 backgroundImage: NetworkImage(
-                    "https://s37564.pcdn.co/wp-content/uploads/2021/11/David-Beckham.jpg.optimal.jpg"),
+                    "https://images.news18.com/ibnlive/uploads/2022/07/5b64ef07d608085cf4b239ddfeda4a8d.png"),
               ),
-              //onTap: ,
             ),
           ),
             Card(
@@ -38,11 +36,10 @@ class Chats extends StatelessWidget {
                 ],
               ),
               leading: const CircleAvatar(
-                radius:50,
+                radius:30,
                 backgroundImage: NetworkImage(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/640px-Google_Contacts_icon.svg.png"),
+                    "https://images.news18.com/ibnlive/uploads/2022/07/5b64ef07d608085cf4b239ddfeda4a8d.png"),
               ),
-              //onTap: ,
             ),
           ),
             Card(
@@ -55,11 +52,10 @@ class Chats extends StatelessWidget {
                 ],
               ),
               leading: const CircleAvatar(
-                radius:50,
+                radius:30,
                 backgroundImage: NetworkImage(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/640px-Google_Contacts_icon.svg.png"),
+                    "https://images.news18.com/ibnlive/uploads/2022/07/5b64ef07d608085cf4b239ddfeda4a8d.png"),
               ),
-              //onTap: ,
             ),
           ),
           Card(
@@ -72,11 +68,10 @@ class Chats extends StatelessWidget {
                 ],
               ),
               leading: const CircleAvatar(
-                radius:50,
+                radius:30,
                 backgroundImage: NetworkImage(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/640px-Google_Contacts_icon.svg.png"),
+                    "https://images.news18.com/ibnlive/uploads/2022/07/5b64ef07d608085cf4b239ddfeda4a8d.png"),
               ),
-              //onTap: ,
             ),
           ),
           Card(
@@ -89,11 +84,10 @@ class Chats extends StatelessWidget {
                 ],
               ),
               leading: const CircleAvatar(
-                radius:50,
+                radius:30,
                 backgroundImage: NetworkImage(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/640px-Google_Contacts_icon.svg.png"),
+                    "https://images.news18.com/ibnlive/uploads/2022/07/5b64ef07d608085cf4b239ddfeda4a8d.png"),
               ),
-              //onTap: ,
             ),
           ),
         ],

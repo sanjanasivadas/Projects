@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: StackScreen(),
   ));
 }
@@ -22,7 +22,7 @@ class _StackScreenState extends State<StackScreen> {
         centerTitle: true,
         leading: Icon(Icons.menu),
         
-        title: Text(
+        title: const Text(
           "Profile",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -43,7 +43,7 @@ class _StackScreenState extends State<StackScreen> {
               fit: BoxFit.cover,
             ),
           ),
-          Positioned(
+          const Positioned(
             // top: 300,
             // left: 230,
             top: 260,
@@ -51,7 +51,7 @@ class _StackScreenState extends State<StackScreen> {
               minRadius: 70,
               maxRadius: 75,
               backgroundImage: NetworkImage(
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Beckswimbledon.jpg/330px-Beckswimbledon.jpg"),
+                  "https://images.news18.com/ibnlive/uploads/2022/07/5b64ef07d608085cf4b239ddfeda4a8d.png"),
             ),
           ),
           Positioned(
@@ -68,12 +68,12 @@ class _StackScreenState extends State<StackScreen> {
             child: FloatingActionButton(
               backgroundColor: Colors.red,
               onPressed: () {},
-              child: Icon(
+              child: const Icon(
                 Icons.message,
               ),
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 420,
             child: Text(
               "David Beckham",
@@ -83,7 +83,7 @@ class _StackScreenState extends State<StackScreen> {
                   fontSize: 23),
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 460,
             child: Text(
               "model/super star",
