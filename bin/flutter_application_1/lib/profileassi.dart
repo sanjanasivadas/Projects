@@ -30,7 +30,7 @@ class ProfileEx extends StatelessWidget{
     children: [
       Container(
         child:
-        Image.network("assets/images/bgimage.jpg",fit:BoxFit.cover),
+        Image.asset("assets/images/bgimage.jpg",fit:BoxFit.cover),
       ),
       const Positioned(
         top: 200,
