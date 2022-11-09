@@ -1,47 +1,45 @@
-import 'dart:html';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/staggeredgrid.dart';
+import 'package:flutter_application_1/staggassi.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_grid_view.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_tile.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Staggeredgridda()
+    home: Staggeredgridassi()
   ));
 }
-class Staggeredgridda extends StatelessWidget{
-   
+class Staggeredgridassi extends StatelessWidget{
+  
     final List<StaggeredTile> _cardTile = const<StaggeredTile> [
-      StaggeredTile.count(2, 2),
+      StaggeredTile.count(1, 2),
+      StaggeredTile.count(1, 1),
       StaggeredTile.count(2, 1),
-      StaggeredTile.count(2, 3),
-      StaggeredTile.count(2, 2),
-      StaggeredTile.count(2, 3),
+      StaggeredTile.count(1, 2),
       StaggeredTile.count(2, 1),
-      StaggeredTile.count(2, 2),
+     
     ];
     
 
-    final List<Widget> _listTile = <Widget> [
-      Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png",),
-      Text("Hello"),
-      Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
-      Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
-      Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
-      Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
-      Image.network("https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png"),
+     final List<Widget> _listTile = <Widget> [
+      const Tiles(
+        links: "https://images.squarespace-cdn.com/content/v1/5d9767b1eb25db6ebdc03a70/1588817684139-VD5DBT6V5MS6FI0LS62G/endgame.png",
+        heading: "Avengers EndGame", 
+        subhead: "Action, Adventure,Fantasy"),
+    
+      
+     
+      
     ];
 
   @override
   Widget build(BuildContext context) {
    return Scaffold(
      body: StaggeredGridView.count(
-      crossAxisCount: 4,
+      crossAxisCount: 2,
       staggeredTiles: _cardTile,
-      mainAxisSpacing: 4,
-      crossAxisSpacing: 4,
+      mainAxisSpacing: 5,
+      crossAxisSpacing: 5,
       children: _listTile,
       ),
    );
@@ -50,17 +48,24 @@ class Staggeredgridda extends StatelessWidget{
 
 class BackGroundTile extends StatelessWidget{
   
-  final Image;
-  String Text;
+  final String links;
+  final String heading;
+  final String subhead;
 
-  BackGroundTile({ required this.Text,this.Image});
+  const BackGroundTile(this.links,this.heading,this.subhead, {super.key});
   
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: Image,
-      
-    );
+    color: Color.fromARGB(39, 255, 255, 255),
+    child: Column(
+    children: [
+    Image.network(links),
+    //children: [
+    Text(heading),
+    Text(subhead),
+    ]),);
+   }   
   }
 
   
@@ -69,5 +74,5 @@ class BackGroundTile extends StatelessWidget{
     
     
    
-  }
+  
 

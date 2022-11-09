@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/listview_with_builder.dart';
 import 'package:flutter_application_1/moviesassi.dart';
-import 'package:flutter_application_1/tables.dart';
+import 'package:flutter_application_1/wcalls.dart';
 import 'package:flutter_application_1/wchat.dart';
+import 'package:flutter_application_1/wstatus.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -63,8 +64,8 @@ class Whatsapp extends StatelessWidget{
             children: [
              List_with_Builder(),
              Chats(),
-             MyTable(),
-             Movies(),
+             Statuss(),
+             Callss(),
             ],),
      ),
    );
