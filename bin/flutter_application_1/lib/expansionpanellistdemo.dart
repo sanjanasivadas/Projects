@@ -4,7 +4,6 @@ void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   static const String _title = 'Flutter Code Sample';
 
   @override
@@ -21,12 +20,9 @@ class MyApp extends StatelessWidget {
 
 // stores ExpansionPanel state information
 class Item {
-  Item({
-    required this.expandedValue,
-    required this.headerValue,
-    this.isExpanded = false,
-  });
 
+  Item({required this.expandedValue, required this.headerValue, this.isExpanded = false,});
+  //instnce variable
   String expandedValue;
   String headerValue;
   bool isExpanded;
@@ -49,6 +45,7 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+
   final List<Item> _data = generateItems(8);
 
   @override
@@ -76,8 +73,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           },
           body: ListTile(
               title: Text(item.expandedValue),
-              subtitle:
-                  const Text('To delete this panel, tap the trash can icon'),
+              subtitle: const Text('To delete this panel, tap the trash can icon'),
               trailing: const Icon(Icons.delete),
               onTap: () {
                 setState(() {
