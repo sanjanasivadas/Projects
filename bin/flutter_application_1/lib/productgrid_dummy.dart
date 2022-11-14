@@ -1,4 +1,4 @@
-const List<Map<String,dynamic>> dummyProducts = [
+const List<Map<String,dynamic>> dummyGrid = [
   {
     "id":1,
     "name": "Apple",
