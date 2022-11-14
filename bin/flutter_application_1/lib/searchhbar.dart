@@ -41,8 +41,10 @@ class _SearchBarState extends State<SearchBar> {
                 onPressed: () {},
               ),
             ],
-            bottom: AppBar(   //bottom is sliver appbars property
-              title: Container(
+            bottom: AppBar(  
+               //bottom is sliver appbars property
+              title: 
+              Container(
                 width: double.infinity,
                 height: 40,
                 color: Colors.white,
