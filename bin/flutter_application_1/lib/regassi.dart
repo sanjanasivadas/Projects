@@ -4,7 +4,9 @@ class SignupPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+    
+      body: 
+      SingleChildScrollView(
         child: Column(  //view of the page is in column arrangement
           children: [
             const Padding(
@@ -17,6 +19,7 @@ class SignupPage extends StatelessWidget{
               child: TextField(
                 decoration: InputDecoration(
                   label: Text("Username"),
+
                   border: OutlineInputBorder(
                     //borderRadius: BorderRadius.all(Radius.circular(20)),
                   )

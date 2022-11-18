@@ -1,25 +1,26 @@
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter/material.dart';
-
-void main(List<String> args) {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: DateandTimex()
-  ));
+//import 'package:intl/intl_browser.dart';
+void main() {
+  return runApp(MyApp());
 }
-class DateandTimex extends StatefulWidget{
+/// My app class to display the date range picker
+class MyApp extends StatefulWidget {
   @override
-  State<DateandTimex> createState() => _DateandTimexState();
+  MyAppState createState() => MyAppState();
 }
-
-class _DateandTimexState extends State<DateandTimex> {
+/// State for MyApp
+class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-   appBar: AppBar(
-   title: Text("Date&Time"),
-   ),
-   body:
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+            appBar: AppBar(
+              centerTitle: true,
+              title: const Text('Date and Time Picker'),
+            ),
+            body:
                     Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Stack(
@@ -53,10 +54,7 @@ class _DateandTimexState extends State<DateandTimex> {
                        ],
                        ),
                     ),
-                           
+                   ),         
                 );
      }
 }
-   
-
-
