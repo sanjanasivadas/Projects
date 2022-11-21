@@ -34,7 +34,8 @@ class Whatsapp extends StatelessWidget{
                 const PopupMenuItem(child: Text("Payments")),
                 const PopupMenuItem(child: Text("Settings")),
               ];
-            })
+            },
+          ),
         ],
         backgroundColor: Color.fromARGB(255, 5, 89, 82),
       //backgroundColor: Color(0xffff2979)
