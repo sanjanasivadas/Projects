@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'farmersgrid.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -12,7 +13,7 @@ class FarmersFresherzone extends StatelessWidget{
   Widget build(BuildContext context) {
    return Scaffold(
     appBar: AppBar(
-      title: Text("FARMERS FRESH ZONE",
+      title: const Text("FARMERS FRESH ZONE",
       style: TextStyle(fontWeight: FontWeight.w600,color: Colors.white),
       ),
 
@@ -49,7 +50,9 @@ class FarmersFresherzone extends StatelessWidget{
                   ),
                   body: SingleChildScrollView(
                     padding: EdgeInsets.all(8),
-                    child: Row(
+                    child: Column(
+                      children:[
+                    Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
@@ -57,46 +60,124 @@ class FarmersFresherzone extends StatelessWidget{
                   height: 30,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.green),
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 218, 239, 227),
                       borderRadius: BorderRadius.circular(24)),
-                  child: Center(child: Text("VEGETABLES",style: TextStyle(color: Colors.green),)),
+                  child: Center(child: Text("VEGETABLES",style: TextStyle(color: Colors.green.shade900),)),
                 ),
                 Container(
                   width: 120,
                   height: 30,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.green),
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 218, 239, 227),
                       borderRadius: BorderRadius.circular(24)),
-                  child: Center(child: Text("FRUITS",style: TextStyle(color: Colors.green),)),
+                  child: Center(child: Text("FRUITS",style: TextStyle(color: Colors.green.shade900),)),
                 ),
                 Container(
                   width: 120,
                   height: 30,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.green),
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 218, 239, 227),
                       borderRadius: BorderRadius.circular(24)),
-                  child: Center(child: Text("EXOTIC",style: TextStyle(color: Colors.green),)),
+                  child: Center(child: Text("EXOTIC",style: TextStyle(color: Colors.green.shade900),)),
                 ),
                 Container(
                   width: 120,
                   height: 30,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.green),
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 218, 239, 227),
                       borderRadius: BorderRadius.circular(24)),
-                  child: Center(child: Text("FRESH CUTS",style: TextStyle(color: Colors.green),
+                  child: Center(child: Text("FRESH CUTS",style: TextStyle(color: Colors.green.shade900),
                   ),
                   ),
                 ),
                ],
              ),
-              //SizedBox(height: 5,),
-              //Image.network("https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
-              
-               
+             Row(
+              children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              width: 470,
+              height: 140,
+              decoration:  const BoxDecoration(
+                //borderRadius: BorderRadius.circular(12),
+                image: DecorationImage(
+                  image: NetworkImage("https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+                   fit: BoxFit.cover),
+              ),
+            ),
+          )
+        ],
+      ),
+             
+             // SizedBox(height: 5),
+               Padding(
+                padding: const EdgeInsets.all(6.0),
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 1,color: Colors.grey.shade300),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        children: const [
+                          Icon(Icons.timer,color: Colors.green,),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("30 MINS POLICY",),
+                        ],
+                      ),
+                      Column(
+                        children: const [
+                          Icon(Icons.camera_front_outlined,color: Colors.green),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("TRACEBILITY",),
+                        ],
+                      ),
+                      Column(
+                        children: const [
+                          Icon(Icons.home_work,color: Colors.green),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("LOCAL SURROUNDING",),
+                        ],
+                       ),
+                    ],
+                  ),
+                ),
                ),
+      
+               Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text(
+                    "Shop By Category",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 17,
+                        ),
+                      ),
+                    ),
+                  ],
+                 ),
+                   FarmersGrid(),
+              ],
+            ),
+             // const SizedBox(
+              //  height: 10,
+              ),
+              
                 bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
          selectedItemColor: Colors.green,
@@ -123,8 +204,9 @@ class FarmersFresherzone extends StatelessWidget{
                 backgroundColor: Colors.white,
                 label: "ACCOUNT"),
                ],
-              ),
-            );
-         }
-  
+             ),
+          );
+     }
 }
+
+
