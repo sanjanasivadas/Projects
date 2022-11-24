@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/ecomercproducts.dart';
-import 'package:flutter_application_1/ecomercspoffer.dart';
+import 'package:flutter_application_1/ecommerceuii/ecomercproducts.dart';
+import 'package:flutter_application_1/ecommerceuii/ecomercspoffer.dart';
 
 import 'ecomercicons.dart';
 

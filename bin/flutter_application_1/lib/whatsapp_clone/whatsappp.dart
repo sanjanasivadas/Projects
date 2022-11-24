@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/listview_with_builder.dart';
-import 'package:flutter_application_1/wcalls.dart';
-import 'package:flutter_application_1/wchat.dart';
-import 'package:flutter_application_1/wstatus.dart';
+import 'package:flutter_application_1/whatsapp_clone/wcalls.dart';
+import 'package:flutter_application_1/whatsapp_clone/wchat.dart';
+import 'package:flutter_application_1/whatsapp_clone/wstatus.dart';
 
 void main() {
   runApp(MaterialApp(

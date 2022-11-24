@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/staggeredgridassi.dart';
-import 'package:flutter_application_1/wcalls.dart';
-import 'package:flutter_application_1/wchat.dart';
+import 'package:flutter_application_1/whatsapp_clone/wcalls.dart';
+import 'package:flutter_application_1/whatsapp_clone/wchat.dart';
 import 'listview_with_separator.dart';
 
 void main() {
