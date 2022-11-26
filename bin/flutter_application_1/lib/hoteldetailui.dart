@@ -111,12 +111,10 @@ class HotelDetailPage extends StatelessWidget{
                               Text("\$ 500", style: TextStyle(
                                 color: Colors.black54,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20.0
-                              ),),
+                                fontSize: 20.0),),
                               Text("/per night",style: TextStyle(
                                 fontSize: 12.0,
-                                color: Colors.grey
-                              ),)
+                                color: Colors.grey),)
                             ],
                           )
                         ],
