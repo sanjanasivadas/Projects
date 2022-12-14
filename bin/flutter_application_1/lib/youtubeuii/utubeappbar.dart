@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({super.key});
-
+class Appbar extends StatelessWidget {
+ 
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
       toolbarHeight: 60,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.grey.shade800,
       title: Container(
         margin: EdgeInsets.all(0),
         width: MediaQuery.of(context).size.width,
@@ -28,7 +27,7 @@ class AppBarWidget extends StatelessWidget {
                 ),
                 Text(
                   "YouTube",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.acme(
                       textStyle: TextStyle(
                           color: Colors.white,
                           fontSize: 16,

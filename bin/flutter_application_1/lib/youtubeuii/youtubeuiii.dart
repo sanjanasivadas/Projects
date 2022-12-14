@@ -1,11 +1,13 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/youtubeuii/youtube_video.dart';
-import 'package:flutter_application_1/youtubeuii/youtubeee.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_application_1/youtubeuii/utubeappbar.dart';
 
 void main() {
   runApp(MaterialApp(
+    //darkTheme: ThemeData.dark(),
     debugShowCheckedModeBanner: false,
+   theme: ThemeData.dark(),
     home: YouTubeui(),
   ));
 }
@@ -13,67 +15,79 @@ class YouTubeui extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-     backgroundColor: Color(0xff434242),
-      body: CustomScrollView(
-        physics: BouncingScrollPhysics(),
-        slivers: [
-          AppBarWidget(),
-          SliverList(
-              delegate: SliverChildListDelegate([
-           // CatagoryWidget(),
-            SizedBox(
-              height: 10,
+    bottomNavigationBar:BottomNavigationBar(
+     // backgroundColor: Colors.grey.shade800,
+      selectedItemColor: Colors.white54,
+      unselectedItemColor: Colors.white54,
+      showUnselectedLabels: true,
+      currentIndex: 1,
+          items: const[
+            BottomNavigationBarItem(
+            icon:Icon(Icons.home,color: Colors.white54,),
+            label: "Home",
+           ),
+           BottomNavigationBarItem(
+            icon: Icon(Icons.explore_outlined,color:Colors.white54),
+            label: "Explore",
             ),
-            VideoWidget(
-                imagemain:
-                    "https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=600",
-                duration: "6:00",
-                Title: "Avoid Network errors",
-                Avatarimg:
-                    'https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&w=600',
-                channelname: 'Pathus Vlog',
-                Views: '23k views',
-                uploadtime: '3hours Ago'),
-            VideoWidget(
-                imagemain:
-                    "https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?auto=compress&cs=tinysrgb&w=600",
-                duration: "3:05",
-                Title: "NASA Findings",
-                Avatarimg:
-                    'https://images.pexels.com/photos/39896/space-station-moon-landing-apollo-15-james-irwin-39896.jpeg?auto=compress&cs=tinysrgb&w=600',
-                channelname: "NASA",
-                Views: '343k views',
-                uploadtime: '4hours ago'),
-            Divider(
-              thickness: 4,
+            BottomNavigationBarItem(
+            icon: Icon(Icons.add_circle_outline_outlined,color:Colors.white54),
+            label: "Add",
             ),
-           // shortScreen(),
-            Divider(
-              thickness: 4,
-            ),
-            VideoWidget(
-                imagemain:
-                    'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=600',
-                duration: '6:10',
-                Title: 'New Model Range Rover',
-                Avatarimg:
-                    'https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=600',
-                channelname: 'CarTech',
-                Views: '543k views',
-                uploadtime: 'yesterday'),
-            VideoWidget(
-                imagemain:
-                    'https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-                duration: '10:50',
-                Title: 'Indian Political',
-                Avatarimg:
-                    'https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=600',
-                channelname: 'Democratic',
-                Views: '53M views',
-                uploadtime: '2 Days Ago')
-          ]))
-        ],
+            BottomNavigationBarItem(
+              icon: Icon(Icons.subscriptions_outlined,color: Colors.white54,),
+              label: "Subscription",
+              ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.video_collection_outlined,color: Colors.white54,),
+              label:"Library",
+              ),
+          ]
       ),
-    );
+     body: CustomScrollView(
+      physics: const BouncingScrollPhysics(),
+      slivers: [ 
+        Appbar(),
+         //SliverList(
+         //delegate: SliverChildDelegate([
+         // CategoryWidget(),
+          SizedBox(
+            height: 10,
+          ),
+          VideoWidget(
+            imagemain: "https://images.unsplash.com/photo-1556911261-6bd341186b2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+             duration: "5:00",
+              Title: "Cooking Tutorial",
+               Avatarimg: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=853&q=80",
+                channelname: "Foodvlogs",
+                 Views: "5k",
+                  uploadtime: "2 mins ago"),
+                  VideoWidget(
+                    imagemain: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+                     duration: "10:00",
+                      Title: "Haldi shots",
+                       Avatarimg: "https://images.unsplash.com/photo-1507504031003-b417219a0fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+                        channelname: "Wedding Co",
+                         Views: "10k",
+                          uploadtime: "2 hours ago"),
+                          VideoWidget(
+                            imagemain: "https://images.unsplash.com/photo-1610562269919-86791081ad29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+                             duration: "7:00",
+                              Title: "Yoga Pose",
+                               Avatarimg: "https://images.unsplash.com/photo-1577344718665-3e7c0c1ecf6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+                                channelname: "Health n Fitness",
+                                 Views: "100",
+                                  uploadtime: "1 sec ago"),
+                                  VideoWidget(
+                                    imagemain: "https://images.unsplash.com/photo-1616410011236-7a42121dd981?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+                                     duration: "3:56",
+                                      Title: "Mobile Review",
+                                       Avatarimg: "https://images.unsplash.com/photo-1560209617-059c0bd661ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+                                        channelname: "TECH WORLD",
+                                         Views: "300",
+                                          uploadtime: "5 secs ago")
+               ],
+              ),
+            );
+     }
   }
-}
